@@ -1,0 +1,77 @@
+# Requirements
+
+  * Python 3.7
+
+> This code makes use of the `f"..."` or [f-string
+> syntax](https://www.python.org/dev/peps/pep-0498/). This syntax was
+> introduced in Python 3.6.
+# Input Json
+```
+{
+    "organization" : {
+        "name" : "Securin",
+        "type" : "Inc",
+        "building_number" : 4,
+        "floating" : -17.4,
+        "null_test": null
+        
+    },
+    "security_related" : true,
+    "array_example0" : ["red", "green", "blue", "black"],
+    "array_example1" : [1, "red", [{ "nested" : true}], { "obj" : false}]
+}
+```
+# Sample Execution & Output
+
+
+If run using Command Line
+
+```
+>> C:\Users\dhala\OneDrive\Desktop\scurin_coder_test> python main.py     
+Enter the path to the json file=C:\Users\dhala\OneDrive\Desktop\scurin_coder_test\sample.json
+Enter the path where the xml file to be stored=C:\Users\dhala\OneDrive\Desktop\scurin_coder_test\           
+The file is successfully created
+>> C:\Users\dhala\OneDrive\Desktop\scurin_coder_test> 
+```
+
+output *simliar* to
+
+```
+<object>
+<object name="organization">
+<string name="name">
+		Securin
+</string>
+<string name="type">
+		Inc
+</string>
+<number name="building_number">
+		4
+</number>
+<number name="floating">
+		-17.4
+</number>
+<null name="null_test"/>
+		null
+</object>
+</object>
+<boolean name="security_related">
+	True
+</boolean>
+<array name="array_example0">
+	red
+	green
+	blue
+	black
+</array>
+<array name="array_example1">
+	1
+	red
+<boolean name="nested">
+		True
+</boolean>
+<boolean name="obj">
+		False
+</boolean>
+</array>
+```
